@@ -207,7 +207,7 @@ p.about-me-text {
     align-content: center !important;
     justify-content: center !important;
     color:white;
-    padding:20px;
+    padding:40px;
 }
 
 img.self {
@@ -221,13 +221,13 @@ img.self {
    }
    p.about-me-text {
        font-size: 15px;
-       text-align: center;
+       text-align: left;
        padding:40px;
    }
    
    img.self {
        max-width:50%;
-      margin-left:120px;
+       padding:40px;
    }
 }
 /*========== Fun Projects ==========*/
