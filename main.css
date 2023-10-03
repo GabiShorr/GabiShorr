@@ -1,16 +1,7 @@
-/*bootstrap plugins*/
-@import "../node_modules/bootstrap/scss/functions";
 
-
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/variables-dark";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
-/* end of plug ins */
 
 body {
-    background-color: #000 !important;
+    background-color: antiquewhite !important;
    }
 
 .nav-bar {
@@ -93,6 +84,23 @@ h1 {
 }
 .photo-wrapped:hover > .content.fade {
     opacity:1;
+}
+
+@media (max-width:768px) {
+    .header h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:491px) {
+    .header h1 {
+        font-size: 35px;
+    }
+    ul.nav-ul {
+        display: block;
+        padding:10px;
+        text-align: center;
+    }
 }
 
 /*==========IT Student Work ==========*/
@@ -186,15 +194,24 @@ div.senior-project {
 }
 
 img.artboards {
-    width:25%;
+    max-width:25%;
     height: auto;
     margin:30px;
 }
 
 
 .midterm-intro, .midterm-body-one {
-    color:white !important;
     margin:50px;
+    font-family: lemonmilk-light;
+}
+
+img.sp-img {
+    max-width: 50% !important;
+    margin:50px;
+}
+
+.timeline {
+    max-width: 30%;
 }
 
 
