@@ -155,7 +155,13 @@ div.work-header {
     margin:30px;
     text-align: right;
 }
-
+@media (max-width:768px) {
+    div.work-header {
+        color:black;
+        margin:30px;
+        text-align: center;
+    }
+}
 .italics {
     color:orange;
 }
@@ -205,7 +211,24 @@ p.about-me-text {
 }
 
 img.self {
-    width:25%;
+    max-width:25%;
+}
+
+@media (max-width:768px) {
+    div.about-me {
+        display: block;
+        padding:25px;
+   }
+   p.about-me-text {
+       font-size: 15px;
+       text-align: center;
+       padding:40px;
+   }
+   
+   img.self {
+       max-width:50%;
+      margin-left:120px;
+   }
 }
 /*========== Fun Projects ==========*/
 div.senior-project {
