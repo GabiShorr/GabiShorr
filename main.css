@@ -196,18 +196,18 @@ a.resume:active  {
  }
 /*=========== About Me ==========*/
 div.about-me {
-     display: flex; 
+    display: flex;
     background-color: #4A77B5;
     padding:50px;
 }
 p.about-me-text {
-    font-size: 20px;
+    font-size: 15px;
     font-family: "brother-1816", sans-serif;
     text-align: center;
     align-content: center !important;
     justify-content: center !important;
     color:white;
-    padding:40px;
+    padding:20px;
 }
 
 img.self {
