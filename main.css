@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: antiquewhite !important;
+    background-color: #FFF6E9 !important;
    }
 
 .nav-bar {
@@ -25,6 +25,10 @@ body {
         padding:0px !important;
         margin:0px !important;
     }
+}
+
+a {
+    color:white;
 }
 
 .nav-ul a {
@@ -90,7 +94,11 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+.photo-wrapped:hover > .content:hover {
 
+    color: white !important;
+
+}
 .photo-wrapped > img,
 .photo-wrapped > .content {
     transition: 200ms ease-in-out;
@@ -119,6 +127,74 @@ h1 {
         text-align: center;
     }
 }
+
+h1.mywork-projects {
+    text-align: center;
+}
+
+/* animated text */
+
+section {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "brother-1816", sans-serif;
+	font-size: 16px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	font-size: 2em;
+	background: #212121;
+	color: #fff;
+	text-transform: uppercase;
+	gap: 30px;
+}
+
+h1 {
+	font-size: 2.5em;
+	text-decoration: underline;
+	@media (max-width: 768px) {
+		font-size: 1.3em;
+	}
+}
+
+.text-shadow {
+	font-style: italic;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: #fff;
+	-webkit-text-stroke-width: 1px;
+	text-shadow: 2px 2px 10px blue;
+	transition: all 0.5s ease-in-out;
+	text-align: center;
+	letter-spacing: 0.2em;
+	animation: flicker 0.5s ease-in-out infinite alternate;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+@keyframes flicker {
+	0% {
+		opacity: 0.5;
+		text-shadow: 2px 2px 10px blue;
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 2px 2px 20px blue;
+	}
+}
+
+/* animated text*/
 
 /*==========IT Student Work ==========*/
 div.student-work {
@@ -151,9 +227,9 @@ a.website-links:focus {
 
 div.work-header {
     font-family: "brother-1816", sans-serif;
-    color:white;
+    
     margin:30px;
-    text-align: right;
+    text-align: center;
 }
 @media (max-width:768px) {
     div.work-header {
@@ -168,6 +244,40 @@ div.work-header {
 .italics:hover {
     color:#4A77B5;
 }
+.tasks h2 {
+    font-family:"brother-1816", sans-serif;
+    text-align: center;
+}
+.tasks ul {
+     display: flex; 
+    list-style-type: none;
+    font-family:"brother-1816", sans-serif;
+    justify-content: space-around; 
+    padding:30px;
+    margin-right:50px;
+}
+
+.tasks li {
+    display: inline-block;
+    animation: movement 3s linear infinite alternate;
+  }
+  
+  @keyframes movement {
+     /* 0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; } */
+   100% { transform: translateX(25%); color: orange; }
+  }
+/* .tasks ul:hover {
+    padding:20px;
+}
+li.li-one:hover, li.li-two:hover, li.li-three:hover, li.li-four:hover, li.li-five:hover{
+    font-size:20px;
+    
+} */
+
+
 
 /*=========== Resume ==========*/
 a.resume {
@@ -203,7 +313,7 @@ div.about-me {
 p.about-me-text {
     font-size: 15px;
     font-family: "brother-1816", sans-serif;
-    text-align: center;
+    text-align: left;
     align-content: center !important;
     justify-content: center !important;
     color:white;
@@ -254,13 +364,36 @@ img.artboards {
 }
 
 
-.midterm-intro, .midterm-body-one {
+.midterm-intro  {
+    margin-left:50px;
+    margin-top:50px;
+    font-family: "brother-1816", sans-serif;
+    color:#4B3621;
+}
+
+.midterm-body-one {
+    display: flex;
+}
+
+.midterm-text {
     margin:50px;
     font-family: "brother-1816", sans-serif;
+    background-color: #4B3621;
+    color:#FFF6E9;
+    padding:25px;
+}
+.timeline {
+    margin-right:50px;
+}
+
+.midterm-body-two {
+    display: flex;
+    justify-content: center;
+
 }
 
 img.sp-img {
-    max-width: 50% !important;
+    max-width: 30% !important;
     margin:50px;
 }
 
