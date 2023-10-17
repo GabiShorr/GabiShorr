@@ -61,7 +61,7 @@ h1 {
 /*=========== My work ==========*/
 .squares {
     display:flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); 
 }
 @media (max-width:768px) {
     .squares {
@@ -69,12 +69,12 @@ h1 {
     }
 
 }
-  .photo-wrapped {
+  .image-w {
     position: relative;
     overflow:hidden;
 } 
 
- .photo-wrapped > img {
+ .image-w > img {
     display:block;
     width:100%;
     aspect-ratio: 1 / 1;
@@ -82,7 +82,7 @@ h1 {
     object-position: center;
 } 
 
-.photo-wrapped > .content {
+.image-w > .cont {
     position: absolute;
     inset: 0;
     font-size: 3rem;
@@ -94,20 +94,20 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.photo-wrapped:hover > .content:hover {
+.image-w:hover > .cont:hover {
 
     color: white !important;
 
 }
-.photo-wrapped > img,
-.photo-wrapped > .content {
+.image-w > img,
+.image-w > .cont {
     transition: 200ms ease-in-out;
 }
 
-.photo-wrapped > .content.fade {
+.image-w > .cont.disappear {
     opacity:0;
 }
-.photo-wrapped:hover > .content.fade {
+.image-w:hover > .cont.disappear {
     opacity:1;
 }
 
@@ -166,7 +166,7 @@ h1 {
 	}
 }
 
-.text-shadow {
+.ts-blue {
 	font-style: italic;
 	text-transform: uppercase;
 	color: transparent;
@@ -342,18 +342,38 @@ img.self {
 }
 /*========== Fun Projects ==========*/
 div.senior-project {
-    padding:25px;
-    justify-content: center;
+    display: flex;
+	flex-direction:row;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px;
 }
 
 @media (max-width:768px) {
     div.senior-project {
-        display: grid;
-        grid-auto-columns: auto;
-        padding:0px;
+        flex-direction: column;
+	justify-content: center;
+	align-items: center;
         
     }
 }
+
+.project-links.artboards {
+    display: flex;
+    align-items: center;
+	min-height: 400px;
+}
+
+@media (max-width:768px) {
+    div.project-links {
+        flex-direction: column;
+	justify-content: center;
+	align-items: center;
+        
+    }
+}
+
 /*=========== Senior Project ==========*/
 
 
