@@ -360,13 +360,14 @@ textarea {
     width:400px;
     height:200px;
     border-radius: 5px;
-    border: 3px solid orange;
+    border: 3px solid;
     font-family: "brother-1816", sans-serif;
+    background-color: #FFF6E9;
 }
 input {
     background-color: #FFF6E9;
     border-radius: 5px;
-    border: 3px solid orange;
+    border: 3px solid;
     font-family: "brother-1816", sans-serif;
 }
 h2.form-h2 {
@@ -376,7 +377,7 @@ h2.form-h2 {
 
 button {
     background-color: #FFF6E9;
-    border: 3px solid orange;
+    border: 3px solid;
     border-radius: 5px;
     height: 35px;
     color:#4A77B5; 
