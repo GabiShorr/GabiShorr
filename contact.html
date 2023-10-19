@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link href="main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/waq7rzm.css">
-    <title>About Me</title>
+    <title>Contact Me</title>
 </head>
 <body>
     <nav class="nav-bar">
@@ -16,15 +16,21 @@
         <ul class="nav-ul">
             <li class="nav-li"><a href="mywork.html">Projects</a></li>
             <li class="nav-li"><a href="resume.html">Résumé</a></li>
-            <li class="nav-li"><a href="aboutme.html">About Me</a></li>
+            <li class="nav-li"><a href="aboutme.html">About</a></li>
             <li class="nav-li"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div class="about-me">
-        <img class="self" src="imgs/myself.png">
-        <p class="about-me-text">I'm Gabi Shorr, a senior at the University of Connecticut majoring in Digital Media and Design with a focus on Web/Interactive Media Design. I've refined my web development skills through coursework and work as a Student Web Designer at UConn's IT Services. I built this portfolio site from scratch to showcase my abilities. Always eager to learn and take on new projects! </p>
-
+    <div class="form">
+        <h2 class="form-h2">Contact Me! </h2>
+        <form method="post">
+            <input type="text" placeholder="Name" id="name" autocomplete="off">
+            <input type="email" placeholder="Email" id="email" autocomplete="off">
+            <input type="text" placeholder="Subject" id="subject" autocomplete="off">
+            <textarea id="message" placeholder="Message" cols="30" rows="30"></textarea>
+            <button id="btn">Send</button>
+        </form>
     </div>
+
     <footer>
         <div class="footer-stuff">
             <div class="f-name">
@@ -40,8 +46,8 @@
                 </ul>
             </div>
         </div>
-    </footer>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="myscripts.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script>
             var btn = document.getElementById('btn');
             btn.addEventListener('click', function(e) {
@@ -61,6 +67,7 @@
                         message => alert(message)
                         );
             })
-        </script
+        </script>
+    </footer>
 </body>
 </html>

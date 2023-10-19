@@ -215,14 +215,17 @@ text-decoration: none;
 a.website-links:hover {
     background-color: #4A77B5;
     color:white;
+    border: 3px solid #FFF6E9 !important;
 }
 a.website-links:active {
     background-color: #4A77B5;
+    border: 3px solid #FFF6E9 !important;
     color:orange;
 }
 a.website-links:focus {
     background-color: #4A77B5;
     color:orange;
+    border: 3px solid #FFF6E9 !important;
 }
 
 div.work-header {
@@ -242,7 +245,7 @@ div.work-header {
     color:orange;
 }
 .italics:hover {
-    color:#4A77B5;
+    color:#FFF6E9;
 }
 .tasks h2 {
     font-family:"brother-1816", sans-serif;
@@ -341,6 +344,53 @@ img.self {
        padding:40px;
    }
 }
+/*========== Contact ==========*/
+div.form > form {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+input , button.btn {
+    width:400px;
+    height:50px;
+    color:#4A77B5;
+}
+textarea {
+    width:400px;
+    height:200px;
+    border-radius: 5px;
+    border: 3px solid orange;
+    font-family: "brother-1816", sans-serif;
+}
+input {
+    background-color: #FFF6E9;
+    border-radius: 5px;
+    border: 3px solid orange;
+    font-family: "brother-1816", sans-serif;
+}
+h2.form-h2 {
+    text-align: center;
+    color: #fff;
+}
+
+button {
+    background-color: #FFF6E9;
+    border: 3px solid orange;
+    border-radius: 5px;
+    height: 35px;
+    color:#4A77B5; 
+    font-family: "brother-1816", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    font-size: large;
+}
+button:hover , button:active , button:focus {
+    border: 3px solid #FFF6E9;
+    background-color: #4A77B5;
+    color:#FFF6E9; 
+}
+
 /*========== Fun Projects ==========*/
 .container {
     width: 1400px;
@@ -396,7 +446,7 @@ img.self {
     width: 100%; 
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(85,118,176,.8);
+    background-color: rgba(0,0,0,.8);
     border-radius: 15px;
   }
   
