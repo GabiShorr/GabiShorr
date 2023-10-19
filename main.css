@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #000000 !important;
+    background-color: #4A77B5 !important;
    }
 
 .nav-bar {
@@ -288,7 +288,7 @@ a.resume {
    margin: 100px;
    text-decoration: none;
    font-size: 100px;
-   color:#4A77B5 !important;
+   color: #fff !important;
 }
 a.resume:hover  {
    color:orange !important;
@@ -342,39 +342,6 @@ img.self {
    }
 }
 /*========== Fun Projects ==========*/
-/* div.senior-project {
-    display: flex;
-	flex-direction:row;
-    flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	min-height: 200px;
-}
-
-@media (max-width:768px) {
-    div.senior-project {
-        flex-direction: column;
-	justify-content: center;
-	align-items: center;
-        
-    }
-}
-
-.project-links.artboards {
-    display: flex;
-    align-items: center;
-	min-height: 400px;
-}
-
-@media (max-width:768px) {
-    div.project-links {
-        flex-direction: column;
-	justify-content: center;
-	align-items: center;
-        
-    }
-} */
-
 .container {
     width: 1400px;
     margin:20px auto;
@@ -407,6 +374,47 @@ img.self {
     }
 }
 
+
+ .container-2 {
+    position: relative; 
+    /* width: 50%; */
+  } 
+  
+   .image-hover {
+    display: block;
+    width: 100%;
+    height: auto;
+  } 
+  
+  .overlay {
+    position: absolute;  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(85,118,176,.8);
+    border-radius: 15px;
+  }
+  
+  .container-2:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 
 /*=========== Senior Project ==========*/
