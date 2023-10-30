@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/waq7rzm.css">
+    <title>About Me</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="header">
+            <h1>Gabriella Shorr</h1>
+        </div>
+        <ul class="nav-ul">
+            <li class="nav-li"><a href="mywork.html">Projects</a></li>
+            <li class="nav-li"><a href="resume.html">Résumé</a></li>
+            <li class="nav-li"><a href="aboutme.html">About Me</a></li>
+            <li class="nav-li"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="about-me">
+        <img class="self" src="imgs/myself.png">
+        <p class="about-me-text">I'm Gabi Shorr, a senior at the University of Connecticut majoring in Digital Media and Design with a focus on Web/Interactive Media Design. I've refined my web development skills through coursework and work as a Student Web Designer at UConn's IT Services. I built this portfolio site from scratch to showcase my abilities. Always eager to learn and take on new projects! </p>
+
+    </div>
+    <footer>
+        <div class="footer-stuff">
+            <div class="f-name">
+                <p class="name">Gabriella Shorr</p>
+            </div>
+            <div class="contact">
+                <p>Contact me:</p>
+                <ul class="f-ul">
+                    <li>Phone #: (401)248-3038</li>
+                    <a href = "mailto: gabishorr@gmail.com"><li>Email: gabishorr@gmail.com</li></a>
+                    <a href="https://www.linkedin.com/in/gabriella-shorr-0b06701b4/"><li>LinkedIn: Gabriella Shorr</li></a>
+                    <a href="https://github.com/GabiShorr"><li>GitHub: Gabi Shorr</li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', function(e) {
+                e.preventDefault()
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var subject = document.getElementById('subject').value;
+                var message = document.getElementById('message').value;
+                var body = 'name: '+name + '<br/> email: ' + email + '<br/> subject: ' +subject +'<br/> message: '+ message;
+                                    Email.send({
+                            SecureToken : "f50a0eb7-0efb-450c-a365-75e9fc2ab048",
+                            To : 'gabishorr@gmail.com',
+                            From : "gabriella.shorr@uconn.edu",
+                            Subject : "Contact Message",
+                            Body : body
+                        }).then(
+                        message => alert(message)
+                        );
+            })
+        </script
+</body>
+</html>

@@ -1,0 +1,567 @@
+
+
+body {
+    background-color: #4A77B5 !important;
+   }
+
+.nav-bar {
+    padding:30px;
+    background-color: #4A77B5;
+    color: white;
+}
+
+.nav-ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+@media (max-width:768px) {
+    .nav-ul {
+        display: inline;
+       text-align: center;
+    }
+    h1 {
+        padding:0px !important;
+        margin:0px !important;
+    }
+}
+
+a {
+    color:white;
+}
+
+.nav-ul a {
+    color: white !important;
+    text-decoration: none;
+    font-family: "brother-1816-printed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav-ul a:hover {
+    color: orange !important;
+}
+.nav-ul a:active {
+    color: orange !important;
+}
+.nav-ul a:focus {
+    color: orange !important;
+}
+
+h1 {
+    font-family: "brother-1816", sans-serif;
+}
+
+.header h1 {
+    padding:30px;
+    text-align: center;
+    font-size: 80px;
+}
+
+/*=========== My work ==========*/
+.squares {
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); 
+}
+@media (max-width:768px) {
+    .squares {
+        display: inline;
+    }
+
+}
+  .image-w {
+    position: relative;
+    overflow:hidden;
+} 
+
+ .image-w > img {
+    display:block;
+    width:100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+} 
+
+.image-w > .cont {
+    position: absolute;
+    inset: 0;
+    font-size: 3rem;
+    padding:1rem;
+    background:rgba(0,0,0,0.7);
+    color: white !important;
+    font-family: "brother-1816", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-w:hover > .cont:hover {
+
+    color: white !important;
+
+}
+.image-w > img,
+.image-w > .cont {
+    transition: 200ms ease-in-out;
+}
+
+.image-w > .cont.disappear {
+    opacity:0;
+}
+.image-w:hover > .cont.disappear {
+    opacity:1;
+}
+
+@media (max-width:768px) {
+    .header h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width:491px) {
+    .header h1 {
+        font-size: 35px;
+    }
+    ul.nav-ul {
+        display: block;
+        padding:10px;
+        text-align: center;
+    }
+}
+
+h1.mywork-projects {
+    text-align: center;
+}
+
+/*====== animated text */
+
+section {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "brother-1816", sans-serif;
+	font-size: 16px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100px;
+	font-size: 2em;
+	background: #212121;
+	color: #fff;
+	text-transform: uppercase;
+	gap: 30px;
+}
+
+h1 {
+	font-size: 2.5em;
+	text-decoration: underline;
+	@media (max-width: 768px) {
+		font-size: 1.3em;
+	}
+}
+
+.ts-blue {
+	font-style: italic;
+	text-transform: uppercase;
+	color: transparent;
+	-webkit-text-stroke: #fff;
+	-webkit-text-stroke-width: 1px;
+	text-shadow: 2px 2px 10px blue;
+	transition: all 0.5s ease-in-out;
+	text-align: center;
+	letter-spacing: 0.2em;
+	animation: flicker 0.5s ease-in-out infinite alternate;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+@keyframes flicker {
+	0% {
+		opacity: 0.5;
+		text-shadow: 2px 2px 10px blue;
+	}
+	100% {
+		opacity: 1;
+		text-shadow: 2px 2px 20px blue;
+	}
+}
+
+/* animated text ======*/
+
+/*==========IT Student Work ==========*/
+div.student-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:50px;
+}
+a.website-links  {
+background-color: white;
+border-radius: 10px;
+padding:30px;
+margin:20px;
+color:#4A77B5;
+font-family: "brother-1816", sans-serif;
+text-decoration: none;
+}
+a.website-links:hover {
+    background-color: #4A77B5;
+    color:white;
+    border: 3px solid #FFF6E9 !important;
+}
+a.website-links:active {
+    background-color: #4A77B5;
+    border: 3px solid #FFF6E9 !important;
+    color:orange;
+}
+a.website-links:focus {
+    background-color: #4A77B5;
+    color:orange;
+    border: 3px solid #FFF6E9 !important;
+}
+
+div.work-header {
+    font-family: "brother-1816", sans-serif;
+    color:white;
+    margin:30px;
+    text-align: center;
+}
+@media (max-width:768px) {
+    div.work-header {
+        color:white;
+        margin:30px;
+        text-align: center;
+    }
+}
+.italics {
+    color:orange;
+}
+.italics:hover {
+    color:#FFF6E9;
+}
+.tasks h2 {
+    font-family:"brother-1816", sans-serif;
+    text-align: center;
+    color:white;
+}
+.tasks ul {
+     display: flex; 
+    list-style-type: none;
+    font-family:"brother-1816", sans-serif;
+    justify-content: space-around; 
+    padding:30px;
+    margin-right:50px;
+}
+
+.tasks li {
+    display: inline-block;
+    animation: movement 3s linear infinite alternate;
+  }
+  
+  @keyframes movement {
+     /* 0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; } */
+   100% { transform: translateX(25%); color: orange; }
+  }
+/* .tasks ul:hover {
+    padding:20px;
+}
+li.li-one:hover, li.li-two:hover, li.li-three:hover, li.li-four:hover, li.li-five:hover{
+    font-size:20px;
+    
+} */
+
+
+
+/*=========== Resume ==========*/
+a.resume {
+    font-family: "brother-1816", sans-serif;
+   display: flex;
+   justify-content: center;
+   margin: 100px;
+   text-decoration: none;
+   font-size: 100px;
+   color: #fff !important;
+}
+a.resume:hover  {
+   color:orange !important;
+}
+a.resume:active  {
+    color:orange !important;
+ }
+ a.resume:focus  {
+    color:orange !important;
+ }
+
+ @media (max-width:768px) {
+    a.resume {
+        font-size: 50px;
+    }
+ }
+/*=========== About Me ==========*/
+div.about-me {
+    display: flex;
+    background-color: #4A77B5;
+    padding:50px;
+}
+p.about-me-text {
+    font-size: 15px;
+    font-family: "brother-1816", sans-serif;
+    text-align: left;
+    align-content: center !important;
+    justify-content: center !important;
+    color:white;
+    padding:40px;
+}
+
+img.self {
+    max-width:25%;
+}
+
+@media (max-width:768px) {
+    div.about-me {
+        display: block;
+        padding:25px;
+   }
+   p.about-me-text {
+       font-size: 15px;
+       text-align: left;
+       padding:40px;
+   }
+   
+   img.self {
+       max-width:50%;
+       padding:40px;
+   }
+}
+/*========== Contact ==========*/
+div.form > form {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+input , button.btn {
+    width:400px;
+    height:50px;
+    color:#4A77B5;
+}
+textarea {
+    width:400px;
+    height:200px;
+    border-radius: 5px;
+    border: 3px solid;
+    font-family: "brother-1816", sans-serif;
+    background-color: #FFF6E9;
+}
+input {
+    background-color: #FFF6E9;
+    border-radius: 5px;
+    border: 3px solid;
+    font-family: "brother-1816", sans-serif;
+}
+h2.form-h2 {
+    text-align: center;
+    color: #fff;
+}
+
+button {
+    background-color: #FFF6E9;
+    border: 3px solid;
+    border-radius: 5px;
+    height: 35px;
+    color:#4A77B5; 
+    font-family: "brother-1816", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    font-size: large;
+}
+button:hover , button:active , button:focus {
+    border: 3px solid #FFF6E9;
+    background-color: #4A77B5;
+    color:#FFF6E9; 
+}
+
+/*========== Fun Projects ==========*/
+.container {
+    width: 1400px;
+    margin:20px auto;
+    columns:4;
+    column-gap:20px;
+}
+.continer .box {
+    width: 100%;
+    margin-bottom:10px;
+    break-inside: avoid;
+}
+.container .box img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+@media (max-width:1200px) {
+    .container {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+@media (max-width:768px) {
+    .container {
+        columns: 2;
+    }
+}
+@media (max-width:480px) {
+    .container {
+        columns: 1;
+    }
+}
+
+
+ .container-2 {
+    position: relative; 
+    /* width: 50%; */
+  } 
+  
+   .image-hover {
+    display: block;
+    width: 100%;
+    height: auto;
+  } 
+  
+  .overlay {
+    position: absolute;  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 15px;
+  }
+  
+  .container-2:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+/*=========== Senior Project ==========*/
+
+
+img.artboards {
+    max-width:25%;
+    height: auto;
+    margin:30px;
+}
+
+
+.midterm-intro  {
+    margin-left:50px;
+    margin-top:50px;
+    font-family: "brother-1816", sans-serif;
+    color:#FFF6E9;
+}
+
+.midterm-body-one {
+    display: flex;
+}
+
+.midterm-text {
+    margin:50px;
+    font-family: "brother-1816", sans-serif;
+    background-color: #4B3621;
+    color:#FFF6E9;
+    padding:25px;
+}
+.timeline {
+    margin-right:50px;
+}
+
+.midterm-body-two {
+    display: flex;
+    justify-content: center;
+
+}
+
+img.sp-img {
+    max-width: 30% !important;
+    margin:50px;
+}
+
+.timeline {
+    max-width: 30%;
+}
+
+
+/*=========== Footer ==========*/
+.footer-stuff {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #4A77B5 !important;
+    padding: 50px !important;
+}
+.f-name {
+    color: white !important;
+    font-family: "brother-1816", sans-serif;
+    font-size: 30px;
+}
+
+.contact  p{
+    color: white !important;
+    font-family: "brother-1816", sans-serif;
+}
+
+.contact  li{
+    color: white !important;
+    font-family: "brother-1816", sans-serif;
+    list-style-type: none;
+}
+
+.name p {
+    align-content: center !important;
+    justify-content: center !important;
+}
+
+@media (max-width:768px) {
+    .footer-stuff {
+        display: block;
+        background-color: #4A77B5 !important;
+        padding: 25px !important;
+    }
+    .f-name {
+        color: white !important;
+        font-family: "brother-1816", sans-serif;
+        font-size: 20px;
+    }
+}
+/*========= practice page =========*/
+/* body { overflow: hidden }
+#flying { 
+    position: absolute;
+    left: -1000px; 
+    width: 50%;
+
+} */
