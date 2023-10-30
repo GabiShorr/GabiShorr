@@ -9,7 +9,7 @@
 </head>
 <nav class="nav-bar">
     <div class="header">
-        <h1>Gabriella <span class="auto-type"></span></h1>
+        <h1>Gabriella Shorr</h1>
     </div>
     <ul class="nav-ul">
         <li class="nav-li"><a href="mywork.html">My Work</a></li>
@@ -92,28 +92,7 @@ button:active::after{
     left:0px;
 }
 </style>  -->
-<div class="background">
-    <img id="plane" src="imgs/airplane-flight.png"/>
-</div>
 
-<script src="myscripts.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-    $(function() {
-    var img = $("#flying"),
-        width = img.get(0).width,
-        screenWidth = $(window).width(),
-        duration = 5000;
-
-    function animatePlane() {
-        img.css("left", -width).animate({
-            "left": screenWidth
-        }, duration, animatePlane);
-    }
-
-    animatePlane();
-});
-</script>
 
 <!-- source: https://pixabay.com/de/flugzeuge-propeller-aircraft-alt-3674305/ -->
 <!-- parallax images -->
