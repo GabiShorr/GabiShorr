@@ -1,0 +1,271 @@
+@font-face {
+    font-family: reisling;
+    src: url(/riesling.ttf);
+}
+body {
+background-color:#fbf5ff;
+}
+/*========== Home Page ==========*/
+.home-1 {
+    display: flex;
+    color: #441052;
+}
+.logo-font {
+    font-family: reisling;
+    font-size: 100px;
+    margin:50px;
+}
+.navbar-1 {
+    margin:100px;
+}
+
+.self-portrait {
+    width: 20%;
+    border-radius:10px;
+    margin-right:50px;
+   margin-left:50px;
+   margin-bottom:50px;
+}
+
+.home-2 {
+    font-family:quicksand;
+}
+
+.home-2 h3 {
+    font-size: 30px;
+}
+
+h2.header-h2 {
+    font-size: 30px;
+    margin-right:50px;
+    color: #fbf5ff;;
+    font-family: quicksand;
+}
+
+a.home-a {
+    font-family: quicksand;
+    margin-right:50px;
+    text-decoration: underline;
+    color: #fbf5ff;;
+}
+
+a.home-a:hover {
+    color: #ffd335;
+}
+
+div.home-3 {
+    text-align: center;
+    background-color: #441052;
+    padding:50px;
+}
+
+.home-imgs {
+  max-width: 40%;
+
+} 
+
+.homeimg-1 {
+  background-color: #fbf5ff;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.home-p {
+  color:#441052;
+  font-size: 30px;
+  font-family: reisling;
+  padding: 25px;
+}
+
+.senior-projectp {
+  color: #fbf5ff;
+  font-family: quicksand;
+
+}
+
+/*========== web/ui page ==========*/
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+.navbar * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+  padding: 0;
+}
+
+.navbar a {
+  position: relative;
+  text-decoration: none;
+  color: #441052;
+  padding:50px;
+    font-family: quicksand;
+    font-size: 30px;
+}
+
+.navbar a::before,
+.navbar a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.navbar a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #811489;
+  border-right: 3px solid #640f46;
+  transform: translate(-100%, 50%);
+}
+
+.navbar a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #811489;
+  border-left: 3px solid #640f46;
+  transform: translate(100%, -50%)
+}
+
+.navbar a:hover:before,
+.navbar a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.navbar a:hover {
+  color: #453da3;
+}
+
+/* pinterest image layout */
+.container {
+    width: 1400px;
+    margin:20px auto;
+    columns:4;
+    column-gap:20px;
+}
+.continer .box {
+    width: 100%;
+    margin-bottom:10px;
+    break-inside: avoid;
+}
+.container .box img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+@media (max-width:1200px) {
+    .container {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+@media (max-width:768px) {
+    .container {
+        columns: 2;
+    }
+}
+@media (max-width:480px) {
+    .container {
+        columns: 1;
+    }
+}
+
+
+ .container-2 {
+    position: relative; 
+    /* width: 50%; */
+  } 
+  
+   .image-hover {
+    display: block;
+    width: 100%;
+    height: auto;
+  } 
+  
+  .overlay {
+    position: absolute;  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(72,1,92,.8);
+    border-radius: 15px;
+  }
+  
+  .container-2:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    font-family: quicksand;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+/*========== web ui design page ==========*/
+.web-ui {
+    text-align: center;
+    margin:50px;
+}
+.web-text {
+    font-family: quicksand;
+    font-size:25px;
+    color: #441052;
+}
+h3.web-h3 {
+    font-family: quicksand;
+    font-weight: 700;
+    font-size:30px;
+    color: #441052;
+}
+
+/*========== Resume Page ==========*/
+.resume {
+    font-family: quicksand;
+    text-align: center;
+    font-size: 50px;
+    color: #441052;
+}
+
+.resume a:hover {
+color:#453da3;
+}
+/*========== Footer ==========*/
+.footer {
+  text-align: center;
+ padding:50px;
+  background-color: #441052;
+}
+span {
+  color: #fbf5ff;
+}
+
+.footer-p {
+  color: #fbf5ff;
+  font-family: reisling;
+  letter-spacing: 3px;
+  font-size: 20px;
+}

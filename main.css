@@ -93,6 +93,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 .image-w:hover > .cont:hover {
 
