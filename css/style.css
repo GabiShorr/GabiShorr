@@ -9,22 +9,64 @@ background-color:#fbf5ff;
 .home-1 {
     display: flex;
     color: #441052;
+    border-bottom:#9e8e00 5px solid;
 }
 .logo-font {
     font-family: reisling;
     font-size: 100px;
     margin:50px;
 }
+
+@media (max-width:981px) {
+  .logo-font {
+    font-size:75px;
+  }
+  .navbar a {
+    font-size: 25px !important;
+  
+  }
+  .home-p {
+    padding-top:100px !important
+  }
+}
+
+@media (max-width:786px) {
+  .logo-font {
+    font-size:50px;
+  }
+  .navbar a {
+    font-size: 20px !important;
+    padding:0px !important;
+  }
+  .home-p {
+    padding-top:70px !important;
+    font-size:20px !important;
+  }
+}
+
+@media (max-width:491px) {
+  .logo-font {
+    font-size:50px;
+  }
+  
+  .home-p {
+    padding-top:70px !important;
+    font-size:20px !important;
+  }
+}
 .navbar-1 {
-    margin:100px;
+    margin-top:100px;
 }
 
 .self-portrait {
-   width:50%;
+   width:30%;
+   padding:25px;
 }
 
 .home-2 {
     font-family:quicksand;
+    display: flex;
+    
 }
 
 .home-2 h3 {
@@ -46,7 +88,7 @@ a.home-a {
 }
 
 a.home-a:hover {
-    color: #ffd335;
+    color: #9e8e00;
 }
 
 div.home-3 {
@@ -59,7 +101,6 @@ div.home-3 {
   max-width: 40%;
 
 } 
-
 .homeimg-1 {
   background-color: #fbf5ff;
   border-radius: 10px;
@@ -71,16 +112,56 @@ div.home-3 {
 
 .home-p {
   color:#441052;
-  font-size: 30px;
-  font-family: reisling;
-  padding: 25px;
+  font-size: 25px;
+  font-family: quicksand;
+  padding-top: 215px;
+
 }
 
 .senior-projectp {
   color: #fbf5ff;
   font-family: quicksand;
-
+display: flex;
+justify-content: center;
+align-content: center;
 }
+
+
+
+/* framed featured imgs */
+
+
+.image-frame {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin: 50px auto;
+}
+
+.background-image {
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.image-container {
+  position: absolute;
+  top: 13%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.foreground-image {
+  width: 35%; /* Adjust the width of the foreground images as needed */
+  box-sizing: border-box;
+  /* border: 10px solid white; Adjust the border size and color as needed */
+}
+
+
 
 /*========== web/ui page ==========*/
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
