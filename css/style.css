@@ -66,7 +66,7 @@ background-color:#fbf5ff;
 .home-2 {
     font-family:quicksand;
     display: flex;
-    
+    background-color: #441052;
 }
 
 .home-2 h3 {
@@ -74,9 +74,10 @@ background-color:#fbf5ff;
 }
 
 h2.header-h2 {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 900 !important;
     margin-right:50px;
-    color: #fbf5ff;;
+    color: #441052;
     font-family: quicksand;
 }
 
@@ -84,7 +85,8 @@ a.home-a {
     font-family: quicksand;
     margin-right:50px;
     text-decoration: underline;
-    color: #fbf5ff;;
+    color: #441052;
+    font-size: 20px;
 }
 
 a.home-a:hover {
@@ -93,7 +95,7 @@ a.home-a:hover {
 
 div.home-3 {
     text-align: center;
-    background-color: #441052;
+    background-color: #fbf5ff;
     padding:50px;
 }
 
@@ -102,7 +104,6 @@ div.home-3 {
 
 } 
 .homeimg-1 {
-  background-color: #fbf5ff;
   border-radius: 10px;
   display: flex;
   padding: 20px;
@@ -111,7 +112,7 @@ div.home-3 {
 }
 
 .home-p {
-  color:#441052;
+  color:#fbf5ff;
   font-size: 25px;
   font-family: quicksand;
   padding-top: 215px;
@@ -119,11 +120,12 @@ div.home-3 {
 }
 
 .senior-projectp {
-  color: #fbf5ff;
+  color: #441052;
   font-family: quicksand;
 display: flex;
 justify-content: center;
 align-content: center;
+font-size: 20px;
 }
 
 
@@ -185,6 +187,7 @@ align-content: center;
   padding:50px;
     font-family: quicksand;
     font-size: 30px;
+    font-weight: 900 !important;
 }
 
 .navbar a::before,
@@ -222,7 +225,7 @@ align-content: center;
 }
 
 .navbar a:hover {
-  color: #453da3;
+  color: #9e8e00;
 }
 
 /* pinterest image layout */
@@ -335,6 +338,7 @@ color:#453da3;
   text-align: center;
  padding:50px;
   background-color: #441052;
+  border-top:#9e8e00 5px solid;
 }
 span {
   color: #fbf5ff;
