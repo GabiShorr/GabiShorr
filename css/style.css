@@ -67,6 +67,7 @@ background-color:#fbf5ff;
     font-family:quicksand;
     display: flex;
     background-color: #441052;
+    background-image: url("/imgs/regal-pattern.png")/* insert regal photo */;
 }
 
 .home-2 h3 {
@@ -96,7 +97,7 @@ a.home-a:hover {
 div.home-3 {
     text-align: center;
     background-color: #fbf5ff;
-    padding:50px;
+    padding-top:50px;
 }
 
 .home-imgs {
@@ -333,12 +334,21 @@ h3.web-h3 {
 .resume a:hover {
 color:#453da3;
 }
+
+.resume-page {
+  height:450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*========== Footer ==========*/
 .footer {
   text-align: center;
  padding:50px;
   background-color: #441052;
   border-top:#9e8e00 5px solid;
+  background-image: url("/imgs/regal-pattern.png")/* insert regal photo */;
+
 }
 span {
   color: #fbf5ff;
