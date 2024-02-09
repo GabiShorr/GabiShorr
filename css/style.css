@@ -5,6 +5,10 @@
 body {
 background-color:#fbf5ff;
 }
+
+/* .navbar a.nav-item  {
+  font-weight: 900 !important;
+} */
 /*========== Home Page ==========*/
 .home-1 {
     display: flex;
@@ -191,7 +195,7 @@ padding-right:35px;
   padding:50px;
     font-family: quicksand;
     font-size: 30px;
-    font-weight: 900 !important;
+ 
 }
 
 .navbar a::before,
@@ -297,7 +301,7 @@ padding-right:35px;
   
   .text a {
     color: white ;
-    font-size: 60px;
+    font-size: 50px;
     font-family: quicksand;
     position: absolute;
     top: 50%;
@@ -365,38 +369,9 @@ span {
 
 /*========== Senior Project page ==========*/
 
-/* Style for the container of the grid */
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -5px; /* Negative margin to remove space between items */
-  padding:10px 100px 100px 100px;
-  /* border: #9e8e00 10px solid; */
-}
-
-/* Style for each image in the grid */
-.image-grid img {
-  width: calc(33.33% - 10px); /* Adjust width of each image (33.33% for 3-column layout) */
-  margin: 5px; /* Margin to create space between images */
-  object-fit: cover; /* Ensures images maintain aspect ratio */
-}
-
-/* Adjust width of each image for smaller screens */
-@media (max-width: 768px) {
-  .image-grid img {
-    width: calc(50% - 10px); /* 50% for 2-column layout */
-  }
-}
-
-@media (max-width: 480px) {
-  .image-grid img {
-    width: 100%; /* Full width for 1-column layout on smaller screens */
-  }
-}
-
 .sp-h3 {
   font-family: quicksand;
-  padding-left:100px;
+  padding-left:50px;
   padding-top:50px;
   font-size: 30px;
 }
@@ -405,6 +380,17 @@ h1.soon {
   font-family: reisling !important;
   font-size: 70px;
   text-align: center;
+}
+
+.web-button {
+  font-family: quicksand;
+  display: flex;
+  justify-content: end;
+  margin:15px;
+  color:#441052;
+}
+.web-button:hover, .web-button:active, .web-button:focus {
+  font-weight: 800 !important;
 }
 
 /*========== ITS Page ==========*/
@@ -459,3 +445,8 @@ h1.soon {
 .image-grid a:hover .overlay {
   opacity: 1; /* Fully opaque on hover */
 }
+
+
+
+
+
